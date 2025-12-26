@@ -1,10 +1,24 @@
-rootProject.name = "PlayStoreClone"
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
 
-include(
-    ":application",
-    ":core:domain",
-    ":core:data",
-    ":feature:appcatalog",
-    ":feature:addapplication",
-    ":feature:applicationdetail"
-)
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "playstore-clone-test"
+
+include(":application")
+include(":core:domain")
+include(":core:data")
+include(":feature:appcatalog")
+include(":feature:addapplication")
+include(":feature:applicationdetail")

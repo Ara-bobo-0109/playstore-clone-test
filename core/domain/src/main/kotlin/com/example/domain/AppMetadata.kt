@@ -1,7 +1,7 @@
 package com.example.domain
 
 data class AppMetadata(
-    val id: Long = 0L,
+    val id: Long,
     val name: String,
     val developerName: String,
     val category: String,
